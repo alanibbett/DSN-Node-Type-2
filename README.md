@@ -17,10 +17,13 @@ To install this code down load the entire repository and place them in a folder 
 
 ## Libraries Required
 Make sure you install the correct boards and libraries:
+
 **Boards**
+
 https://espressif.github.io/arduino-esp32/package_esp32_index.json
 https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json
 (cut and paste these lines into your arduno setup for additional Board Manager URLs)
+
 **Libraries**
 * time (Paul Stoffregen)
 * IniFile (Steve Marple)
