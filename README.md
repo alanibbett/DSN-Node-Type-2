@@ -33,7 +33,7 @@ Make sure you install the correct boards and libraries:
 * IniFile (Steve Marple)
 * TinyGPSPlus (Mikal Hart)
 * Sqlite3Esp32 (Arundale Ramanathan)
-* SerialCommand (Alan Ibbett - download from Github and install in your libraries folder manually)
+* SerialCommand (Oringianlly by Stefan Rado modified by Alan Ibbett - download from aibbett Github and install in your libraries folder manually)
 
 TBC //
 
