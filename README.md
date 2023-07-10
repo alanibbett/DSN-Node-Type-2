@@ -5,7 +5,7 @@ To install this code down load the entire repository and place them in a folder 
 
 *  001SD_Card
 
-   ... All of the SD card functions.
+   ...All of the SD card functions.
  
 *  002PrettyPrint
 *  003DatabaseFunctions
