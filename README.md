@@ -35,4 +35,6 @@ Make sure you install the correct boards and libraries:
 * Sqlite3Esp32 (Arundale Ramanathan)
 * SerialCommand (Alan Ibbett - download from Github and install in your libraries folder manually)
 
+TBC //
+
 
