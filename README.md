@@ -57,13 +57,18 @@ This will bring up a menu of commands that the node understands.
 The SETTIME command set the nodes time:
    >The settime command looks for 3 arguments Hours Minutes and Seconds, we do a check on them to make sure there are three and they are at least in valid ranges we barf if they are not. For example:
 
-**SETTIME 07 45 00**
+
+~~~sh
+SETTIME 07 45 00
+~~~
 
 Similarly the SETDATE command sets the nodes date:
 
 >the setdate command looks for 4 arguments weekday month, day and year, we do a check on them to make sure there are 4 and they are at least in valid ranges we barf if they are not. **REMEMBER Sunday is day 1** for example:
 
-**SETDATE 1 2 3 2023** 
+~~~sh
+SETDATE 1 2 3 2023
+~~~ 
 
 sets the date to Sunday the second of February 2023. **REMEMBER** the RTC does not know what day it is from the date so make sure the day of week matches the date or you will be very confused. (probably should fix this...)
 
