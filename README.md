@@ -4,15 +4,24 @@ Arduino code for the DSN nodes based on the M5Stack Core 2 Series of devices.
 To install this code down load the entire repository and place them in a folder in your sketchbook called **DSN-Node-V4** (take note of the location and capitalisation). You will notice a number of tabs exist. The functions for a part of the code base are loacted in each of these tabs.
 
 *  001SD_Card
-
-   ...All of the SD card functions.
+  
+         All of the SD card functions are in this tab.
  
 *  002PrettyPrint
+
+         This tab contains functions for printing out to the console.
+           
 *  003DatabaseFunctions
+
+         This tab contains functions for manipulating the database.
+    
 *  004WiFiSniffer
-*  005FreeRTOS
+*  05FreeRTOS
 *  006GUI
 *  007SerialCommand
+
+         All of the commands that the node understands from the serial console.
+   
 *  008GPS
 *  009BT_Classic
 *  010Time_Functions
