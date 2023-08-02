@@ -1,7 +1,7 @@
 # DSN-Node-Type-2
 ## Installation Instructions
 Arduino code for the DSN nodes based on the M5Stack Core 2 Series of devices. 
-To install this code down load the entire repository and place them in a folder in your sketchbook called **DSN-Node-V4** (take note of the location and capitalisation). You will notice a number of tabs exist. The functions for a part of the code base are loacted in each of these tabs.
+To install this code down load the entire repository and place them in a folder in your sketchbook called **DSN-Node-V4** (take note of the location and capitalisation). You will notice a number of tabs exist. The functions for a part of the code base are located in each of these tabs.
 
 *  001SD_Card
   
@@ -13,9 +13,15 @@ To install this code down load the entire repository and place them in a folder 
            
 *  003DatabaseFunctions
 
-         This tab contains functions for manipulating the database.
+         This tab contains functions for manipulating the database. This includes opening, closing and running
+         queries on the database. Remember this is running on n a small microcontroller so be mindful of processinging
+         time and memory usage. If you need to do heavy lifting on the database take the SD card from the device and
+         copy the database to a laptop for processing in something like
+                                 DB Browser for SQLite
     
 *  004WiFiSniffer
+
+        As you would expect the WiFi sniffing functions are in this tab. This includes the code for 
 *  05FreeRTOS
 *  006GUI
 *  007SerialCommand
@@ -57,6 +63,7 @@ This will bring up a menu of commands that the node understands.
 The SETTIME command set the nodes time:
    >The settime command looks for 3 arguments Hours Minutes and Seconds, we do a check on them to make sure there are three and they are at least in valid ranges we barf if they are not. For example:
 
+**ALL TIMES ARE IN 24H FORMAT**
 
 ~~~sh
 SETTIME 07 45 00
@@ -70,6 +77,16 @@ Similarly the SETDATE command sets the nodes date:
 SETDATE 1 2 3 2023
 ~~~ 
 
-sets the date to Sunday the second of February 2023. **REMEMBER** the RTC does not know what day it is from the date so make sure the day of week matches the date or you will be very confused. (probably should fix this...)
+sets the date to Sunday the second of February 2023. **REMEMBER** the RTC does not know what day it is from the date so make sure the day of week matches the date or you will be very confused. (probably should fix this...). For the avoidance of all doubt...
+
+| Day | Number |
+|---|---|
+| Sunday |  1|
+| Monday |  2|
+| Tuesday |  3 |
+| Wednsday | 4 |
+| Thursday | 5 |
+| Friday | 6 |
+| Saturday | 7 |
 
 
