@@ -65,20 +65,30 @@ The SETTIME command set the nodes time:
 
 **ALL TIMES ARE IN 24H FORMAT**
 
+<div align="center">
+  
 ~~~sh
 SETTIME 07 45 00
 ~~~
+
+</div> 
 
 Similarly the SETDATE command sets the nodes date:
 
 >the setdate command looks for 4 arguments weekday month, day and year, we do a check on them to make sure there are 4 and they are at least in valid ranges we barf if they are not. **REMEMBER Sunday is day 1** for example:
 
+<div align="center">
+  
 ~~~sh
 SETDATE 1 2 3 2023
 ~~~ 
 
+</div>
+
 sets the date to Sunday the second of February 2023. **REMEMBER** the RTC does not know what day it is from the date so make sure the day of week matches the date or you will be very confused. (probably should fix this...). For the avoidance of all doubt...
 
+<div align="center">
+  
 | Day | Number |
 |---|---|
 | Sunday |  1|
@@ -89,4 +99,4 @@ sets the date to Sunday the second of February 2023. **REMEMBER** the RTC does n
 | Friday | 6 |
 | Saturday | 7 |
 
-
+</div>
