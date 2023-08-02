@@ -16,8 +16,9 @@ To install this code down load the entire repository and place them in a folder 
          This tab contains functions for manipulating the database. This includes opening, closing and running
          queries on the database. Remember this is running on n a small microcontroller so be mindful of processinging
          time and memory usage. If you need to do heavy lifting on the database take the SD card from the device and
-         copy the database to a laptop for processing in something like
-                                 DB Browser for SQLite
+         copy the database to a laptop for processing in something like DB Browser for SQLite
+
+  
     
 *  004WiFiSniffer
 
